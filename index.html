@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>API Stats</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>API Stats</h1>
+    <hr>
+    <div class="search-box-container">
+        <input type="text" placeholder="&#128269; Search..." class="search-box" id="searchInput">
+        <style>
+        
+        </style>
+        
+      </div>
+    <table id="api-stats-table">
+      <thead>
+        <tr>
+          <th>Product ID</th>
+          <th>Product Name</th>
+          <th>Price</th>
+          <th>Category</th>
+          <th>Rating</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="api-stats-tbody"></tbody>
+    </table>
+
+    <!-- Add a div to serve as the popup -->
+    <div id="popup" style="display: none;">
+      <h2>Product Details</h2>
+      <p id="product-title"></p>
+      <p id="product-description"></p>
+      <button id="close-popup">Close</button>
+    </div>
+
+    <!-- Add a div to display the cart count -->
+    <div id="cart-count">Cart 0</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
